@@ -3,14 +3,14 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="nombres">Ingrese su(s) nombre(s)</string>
-    <string name="apellidos">Ingrese su(s) apellido(s)</string>
-    <string name="sexoMasculino">Sexo: Masculino</string>
-    <string name="sexoFemenino">Sexo: Femenino</string>
-    <string name="telefono">Telefono</string>
-    <string name="direccion">Direccion</string>
+    <string name="nombres">Names</string>
+    <string name="apellidos">Last Name</string>
+    <string name="sexoMasculino">Male</string>
+    <string name="sexoFemenino">Female</string>
+    <string name="telefono">Phone</string>
+    <string name="direccion">Address</string>
     <string name="email">Email</string>
-    <string name="paises">Pais</string>
+    <string name="paises">Country</string>
     <string name="hobbies">Hobbies</string>
-    <string name="favorito">Favorito</string>
+    <string name="favorito">Favorite</string>
 </resources>
