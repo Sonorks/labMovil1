@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:background="#fdfffb"
+            android:layout_weight="3"
+            android:baselineAligned="false">
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/Nombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords|textNoSuggestions"
+                    android:hint="@string/nombres"
+                    />
+                <EditText
+                    android:id="@+id/apellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Nombres"
+                    android:inputType="textCapWords|textNoSuggestions"
+                    android:hint="@string/apellidos"
+                    />
+                <RadioGroup
+                    android:id="@+id/Sexo"
+                    android:layout_below="@id/apellidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BotonSexoM"
+                            android:hint="@string/sexoMasculino"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/BotonSexoF"
+                            android:hint="@string/sexoFemenino"
+                            />
+                </RadioGroup>
+               <DatePicker
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FechaNacimiento"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    android:clipToPadding="true"
+                    android:spinnersShown="true"
+                    android:layout_below="@id/Sexo">
+                </DatePicker>
+
+                <EditText
+                    android:id="@+id/Telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/FechaNacimiento"
+                    android:inputType="number"
+                    android:hint="@string/telefono"
+
+                    />
+                <EditText
+                    android:id="@+id/Direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Telefono"
+                    android:inputType="textNoSuggestions"
+                    android:hint="@string/direccion"
+                    />
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Direccion"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Hobbies"
+                    android:layout_below="@id/Email"
+                    android:tag="@string/hobbies"
+                    >
+                </Spinner>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Favorito"
+                    android:layout_below="@id/Hobbies"
+                    android:text="@string/favorito"/>
+                <AutoCompleteTextView
+                    android:layout_width="276dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Pais"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/paises"
+                    android:layout_below="@id/Favorito"/>
+            </RelativeLayout>
+        </ScrollView>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#197c76">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BotonMostrar"
+            android:clickable="true"
+            android:text="Capturar y mostrar"
+            android:background="#515151" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:id="@+id/TextViewMostrar" />
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
