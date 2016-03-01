@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab1UI</string>
+
+    <string name="hello_world">Hola mundo!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="nombres">Ingrese su(s) nombre(s)</string>
+    <string name="apellidos">Ingrese su(s) apellido(s)</string>
+    <string name="sexoMasculino">Sexo: Masculino</string>
+    <string name="sexoFemenino">Sexo: Femenino</string>
+    <string name="telefono">Telefono</string>
+    <string name="direccion">Direccion</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="paises">Pais</string>
+    <string name="hobbies">Pasatiempos</string>
+    <string name="favorito">Favorito</string>
+</resources>
