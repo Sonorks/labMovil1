@@ -13,4 +13,7 @@
     <string name="paises">Country</string>
     <string name="hobbies">Hobbies</string>
     <string name="favorito">Favorite</string>
+    <string name="sexoLabel">Sex</string>
+    <string name="nacimientoLabel">Birthday</string>
+
 </resources>
